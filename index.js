@@ -4,4 +4,4 @@ let caste ="Bhatt"
 console.log('Name')
 console.log(typeof(Name));//to know type of data
 console.log(Name + caste );
-// Always use let keyword rather than using var 
+
