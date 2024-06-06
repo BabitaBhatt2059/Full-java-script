@@ -2,7 +2,7 @@
 //create string
 let str="Apna College";
 console.log(str[8]);
-let specialstring ="this is a templete literal";
+//let specialstring ="this is a templete literal";
 console.log(typeof specialstring);
 let obj = {
     item: "pen",
@@ -10,3 +10,7 @@ let obj = {
 
 };
 
+let output ='the cost of ${obj.item} is $ {obj.price} rupees';
+console.log(output);
+console.log("the cost of", obj.item,"is",obj.price,"rupees");
+//template literals
