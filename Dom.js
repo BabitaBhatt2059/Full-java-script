@@ -1,10 +1,21 @@
-let divs = document.querySelectorAll(".dabba");
-divs[0].innerText="helooo Babi";
-divs[1].innerText="helooo Ramesh";
-divs[2].innerText="helooo Ganesh";
-let idx=1;
-for  (div of divs) {
-    div.innerText = 'new unique value "${idx}';
-    idx++;
-}
+// let newbtn=document.createElement("button");
+// newbtn.innerText="click me!";
+// console.log(newbtn);
+// let div = document.querySelector("div");
+// div.append(newbtn);
+let btn = document.querySelector(".btn");
+let currmode = "light";
+btn.addEventListener("click",()=>{
+    console.log("you are trying to change mode");
+    if (currmode === "light"){
+        currmode="dark";
+        document.querySelector("body").style.backgroundColor="black";
+    }
+    else{
+        currmode = "light";
+        document.querySelector("body").style.backgroundColor="white";
+    }
+    
+    console.log(currmode);
+})
 
