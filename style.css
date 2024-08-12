@@ -1,21 +1,23 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
-body{
+
+body {
     background: cadetblue;
     text-align: center;
+    font-family: Arial, sans-serif;
 }
-.container{
+
+.container {
     height: 70vh;
     display: flex;
     justify-content: center;
     align-items: center;
-
-    
-
 }
-.game{
+
+.game {
     height: 60vmin;
     width: 60vmin;
     display: flex;
@@ -23,45 +25,68 @@ body{
     justify-content: center;
     align-items: center;
     gap: 1.5vmin;
-    
 }
-.box{
-    height:18vmin;
+
+.box {
+    height: 18vmin;
     width: 18vmin;
     border-radius: 1rem;
-    box-shadow: 0 0 1rem rgba(0 ,0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     font-size: 8vmin;
     color: brown;
     background-color: rgb(169, 169, 14);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s, box-shadow 0.3s;
 }
-#reset{
-    border-radius:1rem ;
+
+.box:hover {
+    background-color: rgb(200, 200, 50);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.box:active {
+    background-color: rgb(150, 150, 30);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+#reset, #new-btn {
+    border-radius: 1rem;
     padding: 1rem;
     font-size: 1.5rem;
     background-color: black;
     color: azure;
-
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s, box-shadow 0.3s;
 }
-#new-btn{
-    border-radius:1rem ;
+
+#reset:hover, #new-btn:hover {
+    background-color: #333;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+#reset:active, #new-btn:active {
+    background-color: #111;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.msg-container {
+    height: 30vmin;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     padding: 1rem;
-    font-size: 1.5rem;
-    background-color: black;
-    color: azure;
-    
 }
 
-.msg-container
-{
-    height:30vmin
-}
-#msg{
+#msg {
     color: aliceblue;
-    font-size: 8vmin;
-
+    font-size: 6vmin;
+    font-weight: bold;
+    transition: opacity 0.3s;
 }
- .hide{
+
+.hide {
     display: none;
-} 
-
-
+}
